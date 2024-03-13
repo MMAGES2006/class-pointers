@@ -21,15 +21,17 @@ public:
 
     /*
     agregar parámetros necesarios para poder recibir una Persona en específico
-    y asignarla como mejor amigo. 
+    y asignarla como mejor amigo.
     */
-    void asignarMejorAmigo(...);
-    
+    void asignarMejorAmigo(Persona & 2);
 };
 
 int main()
 {
+    Persona p1;
+    Persona p2;
 
+    p1.asignarMejorAmigo(p2);
     return 0;
 }
 
@@ -50,6 +52,9 @@ int Persona::getEdad()
     return this->edad;
 }
 
+void Persona::asignarMejorAmigo(Persona &p)
+{
+}
 /*
     Implementar función void asignarMejorAmigo(...)
 */
